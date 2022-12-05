@@ -19,15 +19,5 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-## Engine definition
-file(GLOB ENGINESOURCES "Engine/src/*.cpp" "Engine/src/*.h")
-add_library(Warlock SHARED ${ENGINESOURCES})
-
-## Editor definition
-file(GLOB EDITORSOURCES "Editor/src/*.cpp" "Editor/src/*.h")
-add_executable(Warlock-Editor ${EDITORSOURCES})
-
-
-target_link_libraries(Warlock-Editor
-    Warlock
-)
+add_subdirectory(Warlock)
+add_subdirectory(Warlock_Editor)
