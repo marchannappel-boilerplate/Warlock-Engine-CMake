@@ -4,6 +4,7 @@ https://www.codingwiththomas.com/blog/2d-game-engine-starting-a-new-project
 https://medium.com/@petergilmour1987/building-a-game-engine-from-scratch-with-c-and-native-platform-languages-part-two-991618781c33
 https://www.youtube.com/watch?v=MHbGmGUvwVg
 https://github.com/wesExpress/GameEngine2D
+https://github.com/jviney/hazel
 
 
 ## Development
