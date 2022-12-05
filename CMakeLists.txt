@@ -20,4 +20,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(Warlock)
-add_subdirectory(Warlock_Editor)
+add_subdirectory(Editor)

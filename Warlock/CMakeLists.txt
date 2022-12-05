@@ -4,7 +4,12 @@ project( Warlock )
 
 # Add external dependencies
 
-# Add Sources
+# Add Sources (add subfolders of Warlock and Platform too if they are implemented. Also add dependencies without CMake Suport here for now until dependency handling is implemented)
+file(GLOB
+    SOURCES CONFIGURE_DEPENDS
+        "src/Warlock/*.cpp"
+        "src/Platform/*.cpp"
+)
 
 # Create Library
 add_library(Warlock
@@ -12,7 +17,7 @@ add_library(Warlock
         ${SOURCES}
 )
 
-## Link external libraries
+## Link external libraries (only those with cmake support
 target_link_libraries(Warlock
     PUBLIC
 )
@@ -20,13 +25,15 @@ target_link_libraries(Warlock
 ## Add pre-compiled headers
 target_precompile_headers(Warlock
     PUBLIC
-        WarlockPCH.h
+        src/WarlockPCH.hpp
 )
 
 ## Add include directories
 target_include_directories(Warlock
     PUBLIC
         src
+        src/Warlock
+        src/Platform
     PRIVATE
         vendor/*
 )
