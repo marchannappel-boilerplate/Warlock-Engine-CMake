@@ -1,3 +1,9 @@
+### CVS template
+/CVS/*
+**/CVS/*
+.cvsignore
+*/.cvsignore
+
 ### MonoDevelop template
 #User Specific
 *.userprefs
@@ -55,45 +61,6 @@ test-results/
 
 # Built Visual Studio Code Extensions
 *.vsix
-
-### C template
-# Prerequisites
-
-# Object files
-*.ko
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-
-# Libraries
-
-# Shared objects (inc. Windows DLLs)
-*.so.*
-
-# Executables
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
 
 ### Xcode template
 ## User settings
@@ -348,8 +315,10 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
+*.ilk
 *.meta
 *.iobj
+*.pdb
 *.ipdb
 *.pgc
 *.pgd
@@ -665,16 +634,28 @@ luac.out
 
 # Object files
 *.os
+*.ko
+*.elf
 
 # Precompiled Headers
 
 # Libraries
 *.def
+*.exp
 
 # Shared objects (inc. Windows DLLs)
+*.so.*
 
 # Executables
+*.i*86
+*.x86_64
+*.hex
 
+
+### Beef template
+build/
+recovery/
+BeefSpace_User.toml
 
 ### macOS template
 # General
@@ -713,7 +694,6 @@ Temporary Items
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
