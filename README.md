@@ -5,6 +5,8 @@
 - https://www.youtube.com/watch?v=MHbGmGUvwVg
 - https://github.com/wesExpress/GameEngine2D
 - https://github.com/jviney/hazel
+- https://thatonegamedev.com/cpp/ci-cd-for-c-c-games-using-github-actions/
+- https://thatonegamedev.com/cpp/how-to-write-unit-tests-with-cmake/
 
 
 ## Development
